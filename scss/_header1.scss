@@ -1,0 +1,35 @@
+& .header1{
+    grid-area: header; 
+    background-image: url(../imagenes/cabaña5.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 95%;
+    height: 60vh;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 20px;
+    border: solid $oscuro 2px;
+  } 
+  & .bienvenidos{
+   text-align: center;
+   align-items: center;
+   padding: 10px;
+   margin-top: 10px;
+   font-size: 3.5rem;
+   color: rgba(5, 6, 7, 0.959);
+ }
+ & .posada{
+ text-align: center;
+ align-items: center;
+ padding: 10px;
+ margin-top: 10px;
+ font-size: 3rem;
+ color: $clarito;
+}
+ & .paisajes{
+ font-family: 'Courgette', cursive;
+ color: $clarito;
+ font-size: 2.5rem;
+ text-align: center;
+ line-height: 1.5;
+}

@@ -1,0 +1,39 @@
+.nav1{
+    border-radius: 10px;
+    background-color: rgb(89, 128, 89);
+    width: 95%;
+    height: 50vh;
+    margin:  auto;
+    grid-area: nav;
+    flex-direction: column;
+    border: solid $oscuro 2px;
+    & .logo{
+      text-align: center;
+      align-items: center;
+      padding: 1.5rem;
+      &:hover{
+        transform: scale(2 , 1);
+      }
+    }
+    & .menu{
+      display: flex;
+      text-align: center;
+      justify-content: space-evenly;
+      font-size: 2rem;
+      padding: 0.5rem;
+      & .item{
+        color: rgba(71, 50, 3, 0.822);
+        padding: 20px;
+        align-items: center;
+        border-radius: 50px;
+        background-color:$clarito;
+        text-decoration: none;
+        &:hover{
+          background-color:rgba(71, 50, 3, 0.822) ;
+          color:$clarito ;
+          border: solid $oscuro 2px;
+        }
+      }
+    }
+}  
+    

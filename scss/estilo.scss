@@ -1,0 +1,559 @@
+$clarito: rgb(255, 255, 255);
+$verde: rgb(89, 128, 89);
+$oscuro:rgba(0, 0, 0, 0.856);
+
+@mixin sectionsubi() {
+  background-color: $verde;
+  border-radius: 10px;
+  width: 95%;
+  height: 100vh;
+  border: solid $oscuro 2px;
+  margin: 0 auto;
+  filter: opacity(0.9);
+  & .textoubi{
+    font-size: 1.5rem;
+    font-family:'Courgette', cursive;
+  }
+  & .imgubi{
+    width: 600px;
+    height: 55vh;
+    border-radius: 20px;
+    padding: 15px;
+  }
+
+
+    
+}
+  
+    
+@mixin sections() {
+  background-color: $verde;
+  border-radius: 10px;
+  width: 95%;
+  padding: 15px;
+  margin: 15px;
+  border: solid $oscuro 2px;
+  filter: opacity(0.9);
+  &:hover{
+    transform: scale(1.04);
+    
+  }
+  & .titulo{
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 10px;
+    color: $oscuro
+  }
+  & .texto{
+    color: $clarito;
+    line-height: 2;
+    padding: 10px;
+    font-family: 'Courgette', cursive;
+    font-size: 2rem;
+  }
+  & .caja{
+    padding: 10px;
+    margin: 15px;
+    
+  }
+  & .imagen{
+    width: 500px;
+    height: 300px;
+    border-radius: 20px;
+    padding: 15px;
+    border: solid $oscuro 2px;
+  }
+}
+   
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  background-image:url(../imagenes/cabaña6.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family:'Rock Salt', cursive; 
+  }
+    
+    
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1.5fr;
+    grid-template-rows: 0.5fr 1fr 2.5fr 1.5fr;
+    gap: 10px ;
+    grid-template-areas:
+    "nav nav nav"
+    "header header header"
+    "section1 section2 section3"
+    "footer footer footer";
+  
+    .nav1{
+      border-radius: 10px;
+      background-color: rgb(89, 128, 89);
+      width: 95%;
+      height: 50vh;
+      margin:  auto;
+      grid-area: nav;
+      flex-direction: column;
+      border: solid $oscuro 2px;
+      filter: opacity(0.9);
+      & .logo{
+        text-align: center;
+        align-items: center;
+        padding: 1.5rem;
+        &:hover{
+          transform: scale(2 , 1);
+        }
+      }
+      & .menu{
+        display: flex;
+        text-align: center;
+        justify-content: space-evenly;
+        font-size: 2rem;
+        padding: 0.5rem;
+        & .item{
+          color: rgba(71, 50, 3, 0.822);
+          padding: 20px;
+          align-items: center;
+          border-radius: 50px;
+          background-color:$clarito;
+          text-decoration: none;
+          &:hover{
+            background-color:rgba(71, 50, 3, 0.822) ;
+            color:$clarito ;
+            border: solid $oscuro 2px;
+          }
+        }
+      }
+  }  
+    & .header1{
+      grid-area: header; 
+      background-image: url(../imagenes/cabaña5.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 95%;
+      height: 60vh;
+      margin: 0 auto;
+      padding: 20px;
+      border-radius: 20px;
+      border: solid $oscuro 2px;
+    } 
+    & .bienvenidos{
+     text-align: center;
+     align-items: center;
+     padding: 10px;
+     margin-top: 10px;
+     font-size: 3.5rem;
+     color: rgba(5, 6, 7, 0.959);
+   }
+   & .posada{
+   text-align: center;
+   align-items: center;
+   padding: 10px;
+   margin-top: 10px;
+   font-size: 3rem;
+   color: $clarito;
+  }
+   & .paisajes{
+   font-family: 'Courgette', cursive;
+   color: $clarito;
+   font-size: 2.5rem;
+   text-align: center;
+   line-height: 1.5;
+  }
+  .section1 { 
+    grid-area: section1;
+    @include sections();
+ }
+ .section2 {
+    grid-area: section2;
+    @include sections();
+    }
+ 
+ .section3 { 
+   grid-area: section3; 
+   @include sections();
+}
+.footer1 { 
+grid-area: footer; 
+font-family:'Courgette', cursive;
+text-align: center;
+width: 95%;
+height: 40vh;
+font-size: 1.5rem;
+padding: 20px;
+border-radius: 20px;
+border: solid $oscuro 2px;
+justify-content: space-around;
+display: flex;
+margin:0 auto;
+background-color: $verde;
+filter: opacity(0.9);
+}
+& .logo1{
+  padding: 20px;
+  border: solid $oscuro 2px;
+}
+& .logof{
+  padding: 20px;
+  border: solid $oscuro 2px;
+& .captura{
+  padding: 20px 10px;
+  border: solid $oscuro 2px;
+}  
+}
+}
+@media screen and (max-width: 768px) {
+body{
+  background-color: $oscuro;
+}  
+.container {
+  grid-template-columns: 1.5fr 1.5fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 8px ;
+  grid-template-areas:
+  "nav nav"
+  "header header"
+  "section1 section2"
+  "section3 section3"
+  "footer footer";
+}
+} 
+@media screen and (max-width: 420px) {
+  body{
+    background-color: $clarito;
+  }
+    .container {
+      grid-template-columns: 2fr ;
+      grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+      gap: 2px ;
+      grid-template-areas:
+      "nav"
+      "header"
+      "section1"
+      "section2"
+      "section3"
+      "footer";
+    }
+  }
+@media screen and (max-width: 420px) {
+  .footergal{
+    flex-direction: column;
+    font-family:'Courgette', cursive;
+    align-items: center;
+    width: 95%;
+    display: flex;
+    font-size: 0.5rem;
+    padding: 2rem;
+    border-radius: 20px;
+    border: solid $oscuro 2px;
+    justify-content: center;
+    position: absolute;
+    background-color: $verde;
+    filter: opacity(0.9);
+    & .logo1{
+      height: 100px;
+      margin-bottom: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    & .logof{
+     height: 100px;
+     margin-bottom: 1rem;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    }
+    & .captura{
+      height: 100px;
+      margin-bottom: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    } 
+  
+}   
+/*zona de ubicacíon */
+.bodyubi{
+  background-color: $clarito;
+
+}
+  
+.navubicacion{
+  border-radius: 10px;
+  background-color: rgb(89, 128, 89);
+  width: 95%;
+  height: 15vh;
+  margin: 15px auto;
+  grid-area: nav;
+  flex-direction: column;
+  border: solid $oscuro 2px;
+  filter: opacity(0.9);
+  
+  & .menuubi{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    & .item{
+      color: rgba(71, 50, 3, 0.822);
+      padding: 20px;
+      align-items: center;
+      border-radius: 50px;
+      background-color:$clarito;
+      text-decoration: none;
+      margin: 20px;
+      &:hover{
+        background-color:rgba(71, 50, 3, 0.822) ;
+        color:$clarito ;
+        border: solid $oscuro 2px;
+      }
+    }
+  }
+}
+.headerubi{
+  grid-area: header; 
+  background-image: url(../imagenes/cabaña5.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 95%;
+  height: 40vh;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 20px;
+  border: solid $oscuro 2px;
+  & .bienvenidosubi , .subtitulo{
+     text-align: center;
+     align-items: center;
+     padding: 10px;
+     margin-top: 10px;
+     font-size: 3.5rem;
+     color: $oscuro
+    }
+}
+.sectionubi1 {
+  @include sectionsubi();
+  grid-area: section1;
+}
+.sectionubi2 {
+  grid-area: section2;
+  @include sectionsubi();
+  }
+
+.sectionubi3 { 
+ grid-area: section3; 
+ @include sectionsubi();
+}
+/*zona de galería */
+.headergal{
+  grid-area: header; 
+  background-image: url(../imagenes/cabaña5.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 95%;
+  margin: 0 auto;
+  height: 40vh;
+  padding: 20px;
+  border-radius: 20px;
+  border: solid $oscuro 2px;
+  & .galeriadefotos{
+    font-size: 3rem;
+    text-align: center;
+    padding: 30px;
+  }
+}
+
+ .fotogaleria{
+  width: 500PX;
+  height: 300px;
+  border:$clarito 2px double;
+  
+ }
+.divgaleria{
+  border-radius: 10px;
+  background-color: rgb(89, 128, 89);
+  width: 95%;
+  height: 50vh;
+  margin:  auto;
+  grid-area: nav;
+  flex-direction: column;
+  border: solid $oscuro 2px;
+  filter: opacity(0.9);
+  & .logo{
+    text-align: center;
+    align-items: center;
+    padding: 1.5rem;
+    &:hover{
+      transform: scale(2 , 1);
+    }
+  }
+  & .menu{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    font-size: 2rem;
+    padding: 0.5rem;
+    & .item{
+      color: rgba(71, 50, 3, 0.822);
+      padding: 20px;
+      align-items: center;
+      border-radius: 50px;
+      background-color:$clarito;
+      text-decoration: none;
+      &:hover{
+        background-color:rgba(71, 50, 3, 0.822) ;
+        color:$clarito ;
+        border: solid $oscuro 2px;
+      }
+    }
+  }
+}
+main{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+.divfooter{
+  grid-area: footer; 
+font-family:'Courgette', cursive;
+text-align: center;
+width: 95%;
+height: 40vh;
+font-size: 1.5rem;
+padding: 20px;
+border-radius: 20px;
+border: solid $oscuro 2px;
+justify-content: space-around;
+display: flex;
+margin:0 auto;
+background-color: $verde;
+filter: opacity(0.9);
+}
+.footergal{
+  grid-area: footer; 
+  font-family:'Courgette', cursive;
+  text-align: center;
+  width: 95%;
+  height: 40vh;
+  font-size: 1.5rem;
+  padding: 20px;
+  border-radius: 20px;
+  border: solid $oscuro 2px;
+  justify-content: space-around;
+  display: flex;
+  margin:0 auto;
+  background-color: $verde;
+  filter: opacity(0.9);
+  & .logo1{
+    padding: 20px;
+    border: solid $oscuro 2px;
+  }
+  & .logof{
+    padding: 20px;
+    border: solid $oscuro 2px;
+  }
+  & .captura{
+    padding: 20px 10px;
+    border: solid $oscuro 2px;
+  } 
+}
+   
+  
+  
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+      
+         
+   
+
+
+  
+    
+  
+
+
+ 
+  
+
+
+  
+  
+
+
+          
+          
+        
+    
+    
+    
+    
+
+      
+      
+      
+      
+        
+
+ 
+    
+       
+
+      
+       
+        
+        
+        
+
+
+
+
+        
+        
+          
+        
+        
+       
+        
+        
+    
+       
+            
+
+      
+    
+      
+
+    
+      
+      
+      
+    
+      
+   
+
+       

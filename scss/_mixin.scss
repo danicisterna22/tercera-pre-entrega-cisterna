@@ -1,0 +1,49 @@
+@mixin sections() {
+    background-color: $verde;
+    border-radius: 10px;
+    width: 95%;
+    padding: 15px;
+    margin: 15px;
+    border: solid $oscuro 2px;
+    &:hover{
+      transform: scale(1 , 1.1);
+    }
+    & .titulo{
+      text-align: center;
+      font-size: 2.5rem;
+      padding: 10px;
+      color: $oscuro
+    }
+    & .texto{
+      color: $clarito;
+      line-height: 2;
+      padding: 10px;
+      font-family: 'Courgette', cursive;
+      font-size: 2rem;
+    }
+    & .caja{
+      padding: 10px;
+      margin: 15px;
+    }
+    & .imagen{
+      
+      width: 500px;
+      height: 300px;
+      border-radius: 20px;
+      padding: 15px;
+      border: solid $oscuro 2px;
+    }
+  }
+  .section1 { 
+    grid-area: section1;
+    @include sections();
+ }
+ .section2 {
+    grid-area: section2;
+    @include sections();
+    }
+ 
+ .section3 { 
+   grid-area: section3; 
+   @include sections();
+}

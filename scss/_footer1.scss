@@ -1,0 +1,28 @@
+.footer1 { 
+    grid-area: footer; 
+    font-family:'Courgette', cursive;
+    text-align: center;
+    width: 95%;
+    height: 40vh;
+    font-size: 1.5rem;
+    padding: 20px;
+    border-radius: 20px;
+    border: solid $oscuro 2px;
+    justify-content: space-around;
+    display: flex;
+    margin:0 auto;
+    background-color: $verde;
+    }
+    & .logo1{
+      padding: 20px;
+      border: solid $oscuro 2px;
+    }
+    & .logof{
+    
+      padding: 20px;
+      border: solid $oscuro 2px;
+    & .captura{
+      padding: 20px 10px;
+      border: solid $oscuro 2px;
+    }  
+    }

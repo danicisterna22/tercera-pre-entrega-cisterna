@@ -1,0 +1,465 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-image: url(../imagenes/cabaña6.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: 'Rock Salt', cursive; }
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1.5fr;
+  grid-template-rows: 0.5fr 1fr 2.5fr 1.5fr;
+  gap: 10px;
+  grid-template-areas: "nav nav nav" "header header header" "section1 section2 section3" "footer footer footer"; }
+  .container .nav1 {
+    border-radius: 10px;
+    background-color: #598059;
+    width: 95%;
+    height: 50vh;
+    margin: auto;
+    grid-area: nav;
+    flex-direction: column;
+    border: solid rgba(0, 0, 0, 0.856) 2px;
+    filter: opacity(0.9); }
+    .container .nav1 .logo {
+      text-align: center;
+      align-items: center;
+      padding: 1.5rem; }
+      .container .nav1 .logo:hover {
+        transform: scale(2, 1); }
+    .container .nav1 .menu {
+      display: flex;
+      text-align: center;
+      justify-content: space-evenly;
+      font-size: 2rem;
+      padding: 0.5rem; }
+      .container .nav1 .menu .item {
+        color: rgba(71, 50, 3, 0.822);
+        padding: 20px;
+        align-items: center;
+        border-radius: 50px;
+        background-color: white;
+        text-decoration: none; }
+        .container .nav1 .menu .item:hover {
+          background-color: rgba(71, 50, 3, 0.822);
+          color: white;
+          border: solid rgba(0, 0, 0, 0.856) 2px; }
+  .container .header1 {
+    grid-area: header;
+    background-image: url(../imagenes/cabaña5.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 95%;
+    height: 60vh;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 20px;
+    border: solid rgba(0, 0, 0, 0.856) 2px; }
+  .container .bienvenidos {
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 3.5rem;
+    color: rgba(5, 6, 7, 0.959); }
+  .container .posada {
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 3rem;
+    color: white; }
+  .container .paisajes {
+    font-family: 'Courgette', cursive;
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    line-height: 1.5; }
+  .container .section1 {
+    grid-area: section1;
+    background-color: #598059;
+    border-radius: 10px;
+    width: 95%;
+    padding: 15px;
+    margin: 15px;
+    border: solid rgba(0, 0, 0, 0.856) 2px;
+    filter: opacity(0.9); }
+    .container .section1:hover {
+      transform: scale(1.04); }
+    .container .section1 .titulo {
+      text-align: center;
+      font-size: 2.5rem;
+      padding: 10px;
+      color: rgba(0, 0, 0, 0.856); }
+    .container .section1 .texto {
+      color: white;
+      line-height: 2;
+      padding: 10px;
+      font-family: 'Courgette', cursive;
+      font-size: 2rem; }
+    .container .section1 .caja {
+      padding: 10px;
+      margin: 15px; }
+    .container .section1 .imagen {
+      width: 500px;
+      height: 300px;
+      border-radius: 20px;
+      padding: 15px;
+      border: solid rgba(0, 0, 0, 0.856) 2px; }
+  .container .section2 {
+    grid-area: section2;
+    background-color: #598059;
+    border-radius: 10px;
+    width: 95%;
+    padding: 15px;
+    margin: 15px;
+    border: solid rgba(0, 0, 0, 0.856) 2px;
+    filter: opacity(0.9); }
+    .container .section2:hover {
+      transform: scale(1.04); }
+    .container .section2 .titulo {
+      text-align: center;
+      font-size: 2.5rem;
+      padding: 10px;
+      color: rgba(0, 0, 0, 0.856); }
+    .container .section2 .texto {
+      color: white;
+      line-height: 2;
+      padding: 10px;
+      font-family: 'Courgette', cursive;
+      font-size: 2rem; }
+    .container .section2 .caja {
+      padding: 10px;
+      margin: 15px; }
+    .container .section2 .imagen {
+      width: 500px;
+      height: 300px;
+      border-radius: 20px;
+      padding: 15px;
+      border: solid rgba(0, 0, 0, 0.856) 2px; }
+  .container .section3 {
+    grid-area: section3;
+    background-color: #598059;
+    border-radius: 10px;
+    width: 95%;
+    padding: 15px;
+    margin: 15px;
+    border: solid rgba(0, 0, 0, 0.856) 2px;
+    filter: opacity(0.9); }
+    .container .section3:hover {
+      transform: scale(1.04); }
+    .container .section3 .titulo {
+      text-align: center;
+      font-size: 2.5rem;
+      padding: 10px;
+      color: rgba(0, 0, 0, 0.856); }
+    .container .section3 .texto {
+      color: white;
+      line-height: 2;
+      padding: 10px;
+      font-family: 'Courgette', cursive;
+      font-size: 2rem; }
+    .container .section3 .caja {
+      padding: 10px;
+      margin: 15px; }
+    .container .section3 .imagen {
+      width: 500px;
+      height: 300px;
+      border-radius: 20px;
+      padding: 15px;
+      border: solid rgba(0, 0, 0, 0.856) 2px; }
+  .container .footer1 {
+    grid-area: footer;
+    font-family: 'Courgette', cursive;
+    text-align: center;
+    width: 95%;
+    height: 40vh;
+    font-size: 1.5rem;
+    padding: 20px;
+    border-radius: 20px;
+    border: solid rgba(0, 0, 0, 0.856) 2px;
+    justify-content: space-around;
+    display: flex;
+    margin: 0 auto;
+    background-color: #598059;
+    filter: opacity(0.9); }
+  .container .logo1 {
+    padding: 20px;
+    border: solid rgba(0, 0, 0, 0.856) 2px; }
+  .container .logof {
+    padding: 20px;
+    border: solid rgba(0, 0, 0, 0.856) 2px; }
+    .container .logof .captura {
+      padding: 20px 10px;
+      border: solid rgba(0, 0, 0, 0.856) 2px; }
+
+@media screen and (max-width: 768px) {
+  body {
+    background-color: rgba(0, 0, 0, 0.856); }
+  .container {
+    grid-template-columns: 1.5fr 1.5fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 8px;
+    grid-template-areas: "nav nav" "header header" "section1 section2" "section3 section3" "footer footer"; } }
+
+@media screen and (max-width: 420px) {
+  body {
+    background-color: white; }
+  .container {
+    grid-template-columns: 2fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    gap: 2px;
+    grid-template-areas: "nav" "header" "section1" "section2" "section3" "footer"; } }
+
+@media screen and (max-width: 420px) {
+  .footergal {
+    flex-direction: column;
+    font-family: 'Courgette', cursive;
+    align-items: center;
+    width: 95%;
+    display: flex;
+    font-size: 0.5rem;
+    padding: 2rem;
+    border-radius: 20px;
+    border: solid rgba(0, 0, 0, 0.856) 2px;
+    justify-content: center;
+    position: absolute;
+    background-color: #598059;
+    filter: opacity(0.9); }
+    .footergal .logo1 {
+      height: 100px;
+      margin-bottom: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .footergal .logof {
+      height: 100px;
+      margin-bottom: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .footergal .captura {
+      height: 100px;
+      margin-bottom: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center; } }
+
+/*zona de ubicacíon */
+.bodyubi {
+  background-color: white; }
+
+.navubicacion {
+  border-radius: 10px;
+  background-color: #598059;
+  width: 95%;
+  height: 15vh;
+  margin: 15px auto;
+  grid-area: nav;
+  flex-direction: column;
+  border: solid rgba(0, 0, 0, 0.856) 2px;
+  filter: opacity(0.9); }
+  .navubicacion .menuubi {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+    padding: 0.5rem; }
+    .navubicacion .menuubi .item {
+      color: rgba(71, 50, 3, 0.822);
+      padding: 20px;
+      align-items: center;
+      border-radius: 50px;
+      background-color: white;
+      text-decoration: none;
+      margin: 20px; }
+      .navubicacion .menuubi .item:hover {
+        background-color: rgba(71, 50, 3, 0.822);
+        color: white;
+        border: solid rgba(0, 0, 0, 0.856) 2px; }
+
+.headerubi {
+  grid-area: header;
+  background-image: url(../imagenes/cabaña5.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 95%;
+  height: 40vh;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 20px;
+  border: solid rgba(0, 0, 0, 0.856) 2px; }
+  .headerubi .bienvenidosubi, .headerubi .subtitulo {
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 3.5rem;
+    color: rgba(0, 0, 0, 0.856); }
+
+.sectionubi1 {
+  background-color: #598059;
+  border-radius: 10px;
+  width: 95%;
+  height: 100vh;
+  border: solid rgba(0, 0, 0, 0.856) 2px;
+  margin: 0 auto;
+  filter: opacity(0.9);
+  grid-area: section1; }
+  .sectionubi1 .textoubi {
+    font-size: 1.5rem;
+    font-family: 'Courgette', cursive; }
+  .sectionubi1 .imgubi {
+    width: 600px;
+    height: 55vh;
+    border-radius: 20px;
+    padding: 15px; }
+
+.sectionubi2 {
+  grid-area: section2;
+  background-color: #598059;
+  border-radius: 10px;
+  width: 95%;
+  height: 100vh;
+  border: solid rgba(0, 0, 0, 0.856) 2px;
+  margin: 0 auto;
+  filter: opacity(0.9); }
+  .sectionubi2 .textoubi {
+    font-size: 1.5rem;
+    font-family: 'Courgette', cursive; }
+  .sectionubi2 .imgubi {
+    width: 600px;
+    height: 55vh;
+    border-radius: 20px;
+    padding: 15px; }
+
+.sectionubi3 {
+  grid-area: section3;
+  background-color: #598059;
+  border-radius: 10px;
+  width: 95%;
+  height: 100vh;
+  border: solid rgba(0, 0, 0, 0.856) 2px;
+  margin: 0 auto;
+  filter: opacity(0.9); }
+  .sectionubi3 .textoubi {
+    font-size: 1.5rem;
+    font-family: 'Courgette', cursive; }
+  .sectionubi3 .imgubi {
+    width: 600px;
+    height: 55vh;
+    border-radius: 20px;
+    padding: 15px; }
+
+/*zona de galería */
+.headergal {
+  grid-area: header;
+  background-image: url(../imagenes/cabaña5.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 95%;
+  margin: 0 auto;
+  height: 40vh;
+  padding: 20px;
+  border-radius: 20px;
+  border: solid rgba(0, 0, 0, 0.856) 2px; }
+  .headergal .galeriadefotos {
+    font-size: 3rem;
+    text-align: center;
+    padding: 30px; }
+
+.fotogaleria {
+  width: 500PX;
+  height: 300px;
+  border: white 2px double; }
+
+.divgaleria {
+  border-radius: 10px;
+  background-color: #598059;
+  width: 95%;
+  height: 50vh;
+  margin: auto;
+  grid-area: nav;
+  flex-direction: column;
+  border: solid rgba(0, 0, 0, 0.856) 2px;
+  filter: opacity(0.9); }
+  .divgaleria .logo {
+    text-align: center;
+    align-items: center;
+    padding: 1.5rem; }
+    .divgaleria .logo:hover {
+      transform: scale(2, 1); }
+  .divgaleria .menu {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    font-size: 2rem;
+    padding: 0.5rem; }
+    .divgaleria .menu .item {
+      color: rgba(71, 50, 3, 0.822);
+      padding: 20px;
+      align-items: center;
+      border-radius: 50px;
+      background-color: white;
+      text-decoration: none; }
+      .divgaleria .menu .item:hover {
+        background-color: rgba(71, 50, 3, 0.822);
+        color: white;
+        border: solid rgba(0, 0, 0, 0.856) 2px; }
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.divfooter {
+  grid-area: footer;
+  font-family: 'Courgette', cursive;
+  text-align: center;
+  width: 95%;
+  height: 40vh;
+  font-size: 1.5rem;
+  padding: 20px;
+  border-radius: 20px;
+  border: solid rgba(0, 0, 0, 0.856) 2px;
+  justify-content: space-around;
+  display: flex;
+  margin: 0 auto;
+  background-color: #598059;
+  filter: opacity(0.9); }
+
+.footergal {
+  grid-area: footer;
+  font-family: 'Courgette', cursive;
+  text-align: center;
+  width: 95%;
+  height: 40vh;
+  font-size: 1.5rem;
+  padding: 20px;
+  border-radius: 20px;
+  border: solid rgba(0, 0, 0, 0.856) 2px;
+  justify-content: space-around;
+  display: flex;
+  margin: 0 auto;
+  background-color: #598059;
+  filter: opacity(0.9); }
+  .footergal .logo1 {
+    padding: 20px;
+    border: solid rgba(0, 0, 0, 0.856) 2px; }
+  .footergal .logof {
+    padding: 20px;
+    border: solid rgba(0, 0, 0, 0.856) 2px; }
+  .footergal .captura {
+    padding: 20px 10px;
+    border: solid rgba(0, 0, 0, 0.856) 2px; }

@@ -9,457 +9,293 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  background-position: center;
   font-family: 'Rock Salt', cursive; }
 
-.container {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1.5fr 1.5fr 1.5fr;
-  grid-template-rows: 0.5fr 1fr 2.5fr 1.5fr;
-  gap: 10px;
-  grid-template-areas: "nav nav nav" "header header header" "section1 section2 section3" "footer footer footer"; }
-  .container .nav1 {
+.container__principal {
+  width: 90%;
+  margin: 0 5% 0 5%;
+  /* ---PAGINA GALERIA---*/
+  /* ---PAGINA UBICACION---*/ }
+  .container__principal .cabecera {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     border-radius: 10px;
     background-color: #598059;
     width: 95%;
-    height: 50vh;
-    margin: auto;
-    grid-area: nav;
-    flex-direction: column;
+    margin: 0 2.5% 0 2.5%;
     border: solid rgba(0, 0, 0, 0.856) 2px;
     filter: opacity(0.9); }
-    .container .nav1 .logo {
-      text-align: center;
-      align-items: center;
-      padding: 1.5rem; }
-      .container .nav1 .logo:hover {
-        transform: scale(2, 1); }
-    .container .nav1 .menu {
+    .container__principal .cabecera .cabecera__logo {
+      width: 20%; }
+      .container__principal .cabecera .cabecera__logo .cabecera__logo-imagen {
+        width: 50%;
+        margin: 5%;
+        border-radius: 10%; }
+        .container__principal .cabecera .cabecera__logo .cabecera__logo-imagen:hover {
+          transform: scale(1, 1.1); }
+  .container__principal .cabecera__nav {
+    width: 80%; }
+    .container__principal .cabecera__nav .cabecera__nav-menu {
       display: flex;
-      text-align: center;
-      justify-content: space-evenly;
-      font-size: 2rem;
-      padding: 0.5rem; }
-      .container .nav1 .menu .item {
+      justify-content: space-around;
+      list-style: none;
+      font-size: 2rem; }
+      .container__principal .cabecera__nav .cabecera__nav-menu .menu__item .menu__item-link {
+        text-decoration: none;
+        padding: 5px;
         color: rgba(71, 50, 3, 0.822);
-        padding: 20px;
-        align-items: center;
-        border-radius: 50px;
         background-color: white;
-        text-decoration: none; }
-        .container .nav1 .menu .item:hover {
+        border-radius: 50px; }
+        .container__principal .cabecera__nav .cabecera__nav-menu .menu__item .menu__item-link:hover {
           background-color: rgba(71, 50, 3, 0.822);
           color: white;
           border: solid rgba(0, 0, 0, 0.856) 2px; }
-  .container .header1 {
-    grid-area: header;
+  .container__principal .seccion__titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     background-image: url(../imagenes/cabaña5.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     width: 95%;
-    height: 60vh;
-    margin: 0 auto;
-    padding: 20px;
-    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+    margin: 1rem 2.5% 1rem 2.5%;
+    border-radius: 10px;
     border: solid rgba(0, 0, 0, 0.856) 2px; }
-  .container .bienvenidos {
-    text-align: center;
-    align-items: center;
-    padding: 10px;
-    margin-top: 10px;
-    font-size: 3.5rem;
-    color: rgba(5, 6, 7, 0.959); }
-  .container .posada {
-    text-align: center;
-    align-items: center;
-    padding: 10px;
-    margin-top: 10px;
-    font-size: 3rem;
-    color: white; }
-  .container .paisajes {
-    font-family: 'Courgette', cursive;
-    color: white;
-    font-size: 2.5rem;
-    text-align: center;
-    line-height: 1.5; }
-  .container .section1 {
-    grid-area: section1;
-    background-color: #598059;
-    border-radius: 10px;
-    width: 95%;
-    padding: 15px;
-    margin: 15px;
-    border: solid rgba(0, 0, 0, 0.856) 2px;
-    filter: opacity(0.9); }
-    .container .section1:hover {
-      transform: scale(1.04); }
-    .container .section1 .titulo {
-      text-align: center;
-      font-size: 2.5rem;
-      padding: 10px;
-      color: rgba(0, 0, 0, 0.856); }
-    .container .section1 .texto {
+    .container__principal .seccion__titulo .titulo__principal {
+      font-size: 3.5rem;
+      color: rgba(0, 0, 0, 0.856);
+      text-shadow: 0 0 4px white; }
+    .container__principal .seccion__titulo .titulo__secundario {
+      font-size: 3rem;
+      color: white; }
+    .container__principal .seccion__titulo .titulo__comentario {
+      font-family: "Courgette", cursive;
       color: white;
-      line-height: 2;
-      padding: 10px;
-      font-family: 'Courgette', cursive;
-      font-size: 2rem; }
-    .container .section1 .caja {
-      padding: 10px;
-      margin: 15px; }
-    .container .section1 .imagen {
-      width: 500px;
-      height: 300px;
-      border-radius: 20px;
-      padding: 15px;
-      border: solid rgba(0, 0, 0, 0.856) 2px; }
-  .container .section2 {
-    grid-area: section2;
-    background-color: #598059;
-    border-radius: 10px;
+      font-size: 1.5rem; }
+  .container__principal .contenedor__ofrecimientos {
     width: 95%;
-    padding: 15px;
-    margin: 15px;
-    border: solid rgba(0, 0, 0, 0.856) 2px;
-    filter: opacity(0.9); }
-    .container .section2:hover {
-      transform: scale(1.04); }
-    .container .section2 .titulo {
-      text-align: center;
-      font-size: 2.5rem;
-      padding: 10px;
-      color: rgba(0, 0, 0, 0.856); }
-    .container .section2 .texto {
-      color: white;
-      line-height: 2;
-      padding: 10px;
-      font-family: 'Courgette', cursive;
-      font-size: 2rem; }
-    .container .section2 .caja {
-      padding: 10px;
-      margin: 15px; }
-    .container .section2 .imagen {
-      width: 500px;
-      height: 300px;
-      border-radius: 20px;
-      padding: 15px;
-      border: solid rgba(0, 0, 0, 0.856) 2px; }
-  .container .section3 {
-    grid-area: section3;
-    background-color: #598059;
-    border-radius: 10px;
-    width: 95%;
-    padding: 15px;
-    margin: 15px;
-    border: solid rgba(0, 0, 0, 0.856) 2px;
-    filter: opacity(0.9); }
-    .container .section3:hover {
-      transform: scale(1.04); }
-    .container .section3 .titulo {
-      text-align: center;
-      font-size: 2.5rem;
-      padding: 10px;
-      color: rgba(0, 0, 0, 0.856); }
-    .container .section3 .texto {
-      color: white;
-      line-height: 2;
-      padding: 10px;
-      font-family: 'Courgette', cursive;
-      font-size: 2rem; }
-    .container .section3 .caja {
-      padding: 10px;
-      margin: 15px; }
-    .container .section3 .imagen {
-      width: 500px;
-      height: 300px;
-      border-radius: 20px;
-      padding: 15px;
-      border: solid rgba(0, 0, 0, 0.856) 2px; }
-  .container .footer1 {
-    grid-area: footer;
-    font-family: 'Courgette', cursive;
-    text-align: center;
-    width: 95%;
-    height: 40vh;
-    font-size: 1.5rem;
-    padding: 20px;
-    border-radius: 20px;
-    border: solid rgba(0, 0, 0, 0.856) 2px;
-    justify-content: space-around;
+    margin: 0 2.5% 0 2.5%;
     display: flex;
-    margin: 0 auto;
+    justify-content: space-between;
+    border-radius: 10px; }
+    .container__principal .contenedor__ofrecimientos .ofrecimiento__gastronomia {
+      background-color: #598059;
+      border-radius: 10px;
+      width: 30%;
+      border: solid rgba(0, 0, 0, 0.856) 2px;
+      filter: opacity(0.9); }
+      .container__principal .contenedor__ofrecimientos .ofrecimiento__gastronomia .gastronima__titulo {
+        text-align: center;
+        font-size: 1.5rem;
+        color: rgba(0, 0, 0, 0.856); }
+      .container__principal .contenedor__ofrecimientos .ofrecimiento__gastronomia .gastronomia__caja {
+        width: 95%;
+        margin: 0 2.5% 0 2.5%; }
+        .container__principal .contenedor__ofrecimientos .ofrecimiento__gastronomia .gastronomia__caja .ofrecimientos__imagen {
+          width: 100%;
+          border-radius: 20px;
+          border: solid rgba(0, 0, 0, 0.856) 2px; }
+      .container__principal .contenedor__ofrecimientos .ofrecimiento__gastronomia .gastronomia__texto {
+        color: white;
+        font-family: "Courgette", cursive;
+        font-size: 1.4rem;
+        margin-left: 2%; }
+    .container__principal .contenedor__ofrecimientos .ofrecimiento__servicios {
+      background-color: #598059;
+      border-radius: 10px;
+      width: 30%;
+      border: solid rgba(0, 0, 0, 0.856) 2px;
+      filter: opacity(0.9); }
+      .container__principal .contenedor__ofrecimientos .ofrecimiento__servicios .servicio__titulo {
+        text-align: center;
+        font-size: 1.5rem;
+        color: rgba(0, 0, 0, 0.856); }
+      .container__principal .contenedor__ofrecimientos .ofrecimiento__servicios .servicio__caja {
+        width: 95%;
+        margin: 0 2.5% 0 2.5%; }
+        .container__principal .contenedor__ofrecimientos .ofrecimiento__servicios .servicio__caja .ofrecimientos__imagen {
+          width: 100%;
+          border-radius: 20px;
+          border: solid rgba(0, 0, 0, 0.856) 2px; }
+      .container__principal .contenedor__ofrecimientos .ofrecimiento__servicios .servicio__texto {
+        color: white;
+        font-family: "Courgette", cursive;
+        font-size: 1.4rem;
+        margin-left: 2%; }
+    .container__principal .contenedor__ofrecimientos .ofrecimiento__actividades {
+      background-color: #598059;
+      border-radius: 10px;
+      width: 30%;
+      border: solid rgba(0, 0, 0, 0.856) 2px;
+      filter: opacity(0.9); }
+      .container__principal .contenedor__ofrecimientos .ofrecimiento__actividades .actividades__titulo {
+        text-align: center;
+        font-size: 1.5rem;
+        color: rgba(0, 0, 0, 0.856); }
+      .container__principal .contenedor__ofrecimientos .ofrecimiento__actividades .actividades__caja {
+        width: 95%;
+        margin: 0 2.5% 0 2.5%; }
+        .container__principal .contenedor__ofrecimientos .ofrecimiento__actividades .actividades__caja .actividades__imagen {
+          width: 100%;
+          border-radius: 20px;
+          border: solid rgba(0, 0, 0, 0.856) 2px; }
+      .container__principal .contenedor__ofrecimientos .ofrecimiento__actividades .actividades__texto {
+        color: white;
+        font-family: "Courgette", cursive;
+        font-size: 1.4rem;
+        margin-left: 2%; }
+  .container__principal .footer__principal {
+    width: 95%;
+    margin: 2rem 2.5% 2rem 2.5%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
     background-color: #598059;
     filter: opacity(0.9); }
-  .container .logo1 {
-    padding: 20px;
-    border: solid rgba(0, 0, 0, 0.856) 2px; }
-  .container .logof {
-    padding: 20px;
-    border: solid rgba(0, 0, 0, 0.856) 2px; }
-    .container .logof .captura {
-      padding: 20px 10px;
+    .container__principal .footer__principal .footer__caja {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 20px;
       border: solid rgba(0, 0, 0, 0.856) 2px; }
+    .container__principal .footer__principal .footer__titulo {
+      font-family: "Courgette", cursive;
+      text-align: center;
+      font-size: 1.5rem;
+      justify-content: center; }
+    .container__principal .footer__principal .footer__logo {
+      width: 90%;
+      margin: 0 2.5%;
+      border: solid rgba(0, 0, 0, 0.856) 2px;
+      border-radius: 20px; }
+  .container__principal .galeria__fotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 2.5%; }
+    .container__principal .galeria__fotos .fotos {
+      width: 45%; }
+    .container__principal .galeria__fotos .fotos img {
+      width: 100%;
+      height: 50vh;
+      border-radius: 20px; }
+  .container__principal .contenedor__seccion-ubicacion {
+    display: flex;
+    width: 95%;
+    margin: 0 2.5%;
+    justify-content: space-between; }
+    .container__principal .contenedor__seccion-ubicacion .seccion__ubicacion-1 {
+      border-radius: 10px;
+      background-color: #598059;
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      border: solid rgba(0, 0, 0, 0.856) 2px;
+      filter: opacity(0.9); }
+      .container__principal .contenedor__seccion-ubicacion .seccion__ubicacion-1 .textoubi {
+        font-size: 1.5rem;
+        font-family: "Courgette", cursive; }
+      .container__principal .contenedor__seccion-ubicacion .seccion__ubicacion-1 .imgubi {
+        font-size: 1.5rem;
+        font-family: "Courgette", cursive; }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .cabecera__logo {
+    width: 10%; }
+  .titulo__principal {
+    font-size: 0.5rem; }
+  .cabecera__nav {
+    width: 90%;
+    flex-direction: column; }
+  .cabecera__nav-menu {
+    font-size: 1rem; }
+  .menu__item-link {
+    font-size: 1.5rem;
+    padding: 2px;
+    margin-left: 40px; }
+  .contenedor__ofrecimientos {
+    flex-wrap: wrap; }
+  .ofrecimiento__gastronomia {
+    width: 100%;
+    margin-bottom: 5%; }
+  .ofrecimiento__servicios {
+    width: 100%;
+    margin-bottom: 5%; }
+  .ofrecimiento__actividades {
+    width: 100%;
+    margin-bottom: 5%; }
+  .contenedor__seccion-ubicacion {
+    flex-wrap: wrap; }
+  .seccion__ubicacion-2 {
+    width: 100%;
+    margin-bottom: 5%; }
+  .footer__principal {
+    flex-direction: column; }
+  .footer__caja {
+    width: 120%;
+    margin-bottom: 5%;
+    margin-left: 30%; }
+  .footer__titulo {
+    font-size: 0.5rem; } }
+
+@media screen and (max-width: 420px) {
   body {
     background-color: rgba(0, 0, 0, 0.856); }
-  .container {
-    grid-template-columns: 1.5fr 1.5fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    gap: 8px;
-    grid-template-areas: "nav nav" "header header" "section1 section2" "section3 section3" "footer footer"; } }
+  .cabecera__logo {
+    width: 10%; }
+  .titulo__principal {
+    font-size: 0.5rem; }
+  .cabecera {
+    width: 100%;
+    margin: auto; }
+  .cabecera__nav {
+    width: 90%;
+    flex-direction: column; }
+  .cabecera__nav-menu {
+    font-size: 1rem; }
+  .menu__item-link {
+    font-size: 1.5rem;
+    padding: 2.5px;
+    margin-left: 40px; } }
 
-@media screen and (max-width: 420px) {
-  body {
-    background-color: white; }
-  .container {
-    grid-template-columns: 2fr;
-    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
-    gap: 2px;
-    grid-template-areas: "nav" "header" "section1" "section2" "section3" "footer"; } }
-
-@media screen and (max-width: 420px) {
-  .footergal {
-    flex-direction: column;
-    font-family: 'Courgette', cursive;
-    align-items: center;
-    width: 95%;
-    display: flex;
+@media screen and (max-width: 420px) and (min-width: 420px) and (max-width: 768px) {
+  .fotos img {
+    height: 30vh; }
+  .menu__item-link {
     font-size: 0.5rem;
-    padding: 2rem;
-    border-radius: 20px;
-    border: solid rgba(0, 0, 0, 0.856) 2px;
-    justify-content: center;
-    position: absolute;
-    background-color: #598059;
-    filter: opacity(0.9); }
-    .footergal .logo1 {
-      height: 100px;
-      margin-bottom: 1rem;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-    .footergal .logof {
-      height: 100px;
-      margin-bottom: 1rem;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-    .footergal .captura {
-      height: 100px;
-      margin-bottom: 1rem;
-      display: flex;
-      justify-content: center;
-      align-items: center; } }
+    padding: 1px; }
+  .cabecera__nav-menu {
+    padding: 2px; }
+  .cabecera__nav {
+    width: 100%; } }
 
-/*zona de ubicacíon */
-.bodyubi {
-  background-color: white; }
+@media screen and (max-width: 420px) and (max-width: 420px) {
+  .fotos {
+    width: 80%;
+    margin: 2rem 10%; }
+  .fotos img {
+    height: 80%;
+    width: 100%;
+    margin-left: 30%; }
+  .galeria__fotos {
+    flex-direction: column; } }
 
-.navubicacion {
-  border-radius: 10px;
-  background-color: #598059;
-  width: 95%;
-  height: 15vh;
-  margin: 15px auto;
-  grid-area: nav;
-  flex-direction: column;
-  border: solid rgba(0, 0, 0, 0.856) 2px;
-  filter: opacity(0.9); }
-  .navubicacion .menuubi {
-    display: flex;
-    text-align: center;
-    justify-content: space-evenly;
-    font-size: 1.5rem;
-    padding: 0.5rem; }
-    .navubicacion .menuubi .item {
-      color: rgba(71, 50, 3, 0.822);
-      padding: 20px;
-      align-items: center;
-      border-radius: 50px;
-      background-color: white;
-      text-decoration: none;
-      margin: 20px; }
-      .navubicacion .menuubi .item:hover {
-        background-color: rgba(71, 50, 3, 0.822);
-        color: white;
-        border: solid rgba(0, 0, 0, 0.856) 2px; }
-
-.headerubi {
-  grid-area: header;
-  background-image: url(../imagenes/cabaña5.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 95%;
-  height: 40vh;
-  margin: 0 auto;
-  padding: 20px;
-  border-radius: 20px;
-  border: solid rgba(0, 0, 0, 0.856) 2px; }
-  .headerubi .bienvenidosubi, .headerubi .subtitulo {
-    text-align: center;
-    align-items: center;
-    padding: 10px;
-    margin-top: 10px;
-    font-size: 3.5rem;
-    color: rgba(0, 0, 0, 0.856); }
-
-.sectionubi1 {
-  background-color: #598059;
-  border-radius: 10px;
-  width: 95%;
-  height: 100vh;
-  border: solid rgba(0, 0, 0, 0.856) 2px;
-  margin: 0 auto;
-  filter: opacity(0.9);
-  grid-area: section1; }
-  .sectionubi1 .textoubi {
-    font-size: 1.5rem;
-    font-family: 'Courgette', cursive; }
-  .sectionubi1 .imgubi {
-    width: 600px;
-    height: 55vh;
-    border-radius: 20px;
-    padding: 15px; }
-
-.sectionubi2 {
-  grid-area: section2;
-  background-color: #598059;
-  border-radius: 10px;
-  width: 95%;
-  height: 100vh;
-  border: solid rgba(0, 0, 0, 0.856) 2px;
-  margin: 0 auto;
-  filter: opacity(0.9); }
-  .sectionubi2 .textoubi {
-    font-size: 1.5rem;
-    font-family: 'Courgette', cursive; }
-  .sectionubi2 .imgubi {
-    width: 600px;
-    height: 55vh;
-    border-radius: 20px;
-    padding: 15px; }
-
-.sectionubi3 {
-  grid-area: section3;
-  background-color: #598059;
-  border-radius: 10px;
-  width: 95%;
-  height: 100vh;
-  border: solid rgba(0, 0, 0, 0.856) 2px;
-  margin: 0 auto;
-  filter: opacity(0.9); }
-  .sectionubi3 .textoubi {
-    font-size: 1.5rem;
-    font-family: 'Courgette', cursive; }
-  .sectionubi3 .imgubi {
-    width: 600px;
-    height: 55vh;
-    border-radius: 20px;
-    padding: 15px; }
-
-/*zona de galería */
-.headergal {
-  grid-area: header;
-  background-image: url(../imagenes/cabaña5.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 95%;
-  margin: 0 auto;
-  height: 40vh;
-  padding: 20px;
-  border-radius: 20px;
-  border: solid rgba(0, 0, 0, 0.856) 2px; }
-  .headergal .galeriadefotos {
-    font-size: 3rem;
-    text-align: center;
-    padding: 30px; }
-
-.fotogaleria {
-  width: 500PX;
-  height: 300px;
-  border: white 2px double; }
-
-.divgaleria {
-  border-radius: 10px;
-  background-color: #598059;
-  width: 95%;
-  height: 50vh;
-  margin: auto;
-  grid-area: nav;
-  flex-direction: column;
-  border: solid rgba(0, 0, 0, 0.856) 2px;
-  filter: opacity(0.9); }
-  .divgaleria .logo {
-    text-align: center;
-    align-items: center;
-    padding: 1.5rem; }
-    .divgaleria .logo:hover {
-      transform: scale(2, 1); }
-  .divgaleria .menu {
-    display: flex;
-    text-align: center;
-    justify-content: space-evenly;
-    font-size: 2rem;
-    padding: 0.5rem; }
-    .divgaleria .menu .item {
-      color: rgba(71, 50, 3, 0.822);
-      padding: 20px;
-      align-items: center;
-      border-radius: 50px;
-      background-color: white;
-      text-decoration: none; }
-      .divgaleria .menu .item:hover {
-        background-color: rgba(71, 50, 3, 0.822);
-        color: white;
-        border: solid rgba(0, 0, 0, 0.856) 2px; }
-
-main {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around; }
-
-.divfooter {
-  grid-area: footer;
-  font-family: 'Courgette', cursive;
-  text-align: center;
-  width: 95%;
-  height: 40vh;
-  font-size: 1.5rem;
-  padding: 20px;
-  border-radius: 20px;
-  border: solid rgba(0, 0, 0, 0.856) 2px;
-  justify-content: space-around;
-  display: flex;
-  margin: 0 auto;
-  background-color: #598059;
-  filter: opacity(0.9); }
-
-.footergal {
-  grid-area: footer;
-  font-family: 'Courgette', cursive;
-  text-align: center;
-  width: 95%;
-  height: 40vh;
-  font-size: 1.5rem;
-  padding: 20px;
-  border-radius: 20px;
-  border: solid rgba(0, 0, 0, 0.856) 2px;
-  justify-content: space-around;
-  display: flex;
-  margin: 0 auto;
-  background-color: #598059;
-  filter: opacity(0.9); }
-  .footergal .logo1 {
-    padding: 20px;
-    border: solid rgba(0, 0, 0, 0.856) 2px; }
-  .footergal .logof {
-    padding: 20px;
-    border: solid rgba(0, 0, 0, 0.856) 2px; }
-  .footergal .captura {
-    padding: 20px 10px;
-    border: solid rgba(0, 0, 0, 0.856) 2px; }
+@media screen and (max-width: 420px) and (max-width: 420px) and (max-width: 768px) {
+  .contenedor__seccion-ubicacion {
+    flex-direction: row;
+    width: 100%; }
+  .seccion__ubicacion-1 {
+    width: 100%;
+    margin-bottom: 2rem;
+    flex-direction: row; }
+  .cabecera {
+    flex-direction: column; }
+  .cabecera__nav-menu {
+    flex-direction: column; } }
